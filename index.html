@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz Challenge</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <header>
+        <div class="totalscore">
+            <a id="topscore"></a>
+        </div>
+        <div id="timekeep" class="timer"></div>
+    </header>
+    <section id="introduction" class="">
+        <h1>Coding Quiz Challenge</h1>
+        <p>Try to answer the following questions to the best of your ability in 75 seconds.
+            If you answer incorrectly,you will be penalized by 10 seconds. Your score will be logged and compared to others.
+            Click start to begin.
+        </p>
+        <button class="controlbuttons" id="startquiz">Start</button>
+    </section>
+    <br>
+    <br>
+
+    <section id="quiz" class="hide" >
+        <h1 id="question">Here is where we will ask the question</h1>
+        <ol class="answers" id="allanswerstotal">
+           <li><button id="answer1">A</button></li> 
+           <li><button id="answer2">B</button></li> 
+           <li><button id="answer3">C</button></li>
+           <li><button id="answer4">D</button></li>
+        </ol>
+        <p class="hide" id="correctorwrong"><em>Correct</em></p>
+        <div class="controlbuttons">
+            <button id="nextquestion">NEXT</button>
+        </div>
+    </section>
+
+    <section id="finalscore" class="hide">
+        <br>
+        <h1>ALL DONE</h1>
+        <p>Your final score is:</p>
+        <p id="score"></p>     
+            <h2></h2>
+            <label id="usernamelabel">Enter your username to save the score:</label>
+            <input maxlength="2" type="text" id="fname" name="fname"><br><br>
+            <button id="submission">SUBMIT</button>
+    </section>
+    <br>
+    <br>
+    <section id="highestscores" class="highscore hide">
+        <h1>Highscores</h1>
+        <br>
+        <br>
+        <ol id="topscoress">
+        
+        </ol>
+        <div id="returnorclear" class="controlbuttons">
+            <button id="restart">Go back</button>
+            <button id="clearscores">Clear Scores</button>
+        </div>
+    </section>
+
+    <script src="./Untitled-3.js"></script>
+    
+</body>
+</html>
