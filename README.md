@@ -24,5 +24,6 @@ https://github.com/leothoma88/LeosCodingQuiz.git
 
 ## Live Link
 
+https://leothoma88.github.io/LeosCodingQuiz/
 
 
