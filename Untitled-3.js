@@ -68,7 +68,8 @@ onscreen.submissionbutton.addEventListener("click",function(event){
 // onscreen.submissionbutton.addEventListener("click", tolocalstorage)
 onscreen.restartbutton.addEventListener("click", Doitagain)
 
-
+//Button to clear all highscores
+onscreen.clearscoresbutton.addEventListener("click", clearhighscores)
 
 
 //These check all the answers with click event listener.
@@ -325,5 +326,11 @@ function Endofgame(){
     
     
 
+}
+
+//Clear storage
+function clearhighscores(){
+    localStorage.clear();
+    onscreen.Theelite.innerHTML = ""
 }
 
